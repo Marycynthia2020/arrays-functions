@@ -54,7 +54,7 @@ console.log(changeFruit(fruit))
 
 // Question 4
 let maximumNumber = function(array) {
-    let maxNumber = 0
+    let maxNumber = array[0]
     for (let i = 0; i < array.length; i++) {
         if(array[i] > maxNumber) {
             maxNumber = array[i]
@@ -63,7 +63,7 @@ let maximumNumber = function(array) {
     return 'The maximum number is ' + maxNumber
 }
 // lets test
-let arr = [3,106,7,8,99]
+let arr = [3,106,7,88,99]
 console.log(maximumNumber(arr))
 
 // Question 5
