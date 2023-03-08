@@ -63,10 +63,16 @@ let maximumNumber = function(array) {
     return 'The maximum number is ' + maxNumber
 }
 // lets test
-let arr = [3,106,7,88,99]
+let arr = [3,10,7,8,99]
 console.log(maximumNumber(arr))
 
 // Question 5
-let valTimesIndex = (index, num) => index * num
 
-console.log(arr.map(valTimesIndex ))
+function product(array) {
+    let result = []
+    for(let i = 0; i < array.length; i++) {
+     result.push(array[i] * i)
+    }
+    return result
+}
+console.log(product(arr))
